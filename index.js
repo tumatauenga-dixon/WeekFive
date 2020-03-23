@@ -61,8 +61,14 @@ console.log(c); // 21
 console.log("Generator")
 // Generator function:
 function* generator() {
-    yield 1;
-    yield 2;
-    yield 3;
+    yield 0; yield 1; yield 2;
   }for (let value of generator())
-    console.log( value );
+    console.log(value);
+
+let string = 'text';for (let value of string)
+console.log(value);
+
+
+let array = [0, 1, 2];
+for (let value of array)
+   console.log(value);
